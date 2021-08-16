@@ -8,7 +8,7 @@ void elevator(int floor)
 		return;
 	}
 	cout << floor << endl;
-	elevator(floor-1);
+    elevator(floor-1);
 	cout << floor << endl;
 }
 
