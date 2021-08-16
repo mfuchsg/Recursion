@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 //#define factorial
@@ -33,26 +33,26 @@ void main()
 	setlocale(LC_ALL, "Russian");
 #ifdef factorial
 	int n;
-	cout << "Ââåäèòå ôàêòîðèàë ÷èñëî: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> n;
 	if (n >= 0)
 	{
 		cout << Factorial(n);
 	}
 	else
 	{
-		cout << "×èñëî äîëæíî áûòü áîëüøå íóëÿ";
+		cout << "Ð§Ð¸ÑÐ»Ð¾ Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½ÑƒÐ»Ñ";
 	}
 #endif // factorial
 
 #ifdef Power_2
 	int base;
 	int power;
-	cout << "Ââåäèòå ÷èñëî: "; cin >> base;
-	cout << "Ââåäèòå ñòåïåíü ÷èñëà: "; cin >> power;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> base;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ Ñ‡Ð¸ÑÐ»Ð°: "; cin >> power;
 	cout << Power_1(base, power);
 #endif // Powe_2
 	int n;
 	int a;
-	cout << "Äî êàêîãî ÷èñëà âûâåñòè: "; cin >> a;
+	cout << "Ð”Ð¾ ÐºÐ°ÐºÐ¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð° Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸: "; cin >> a;
 	cout << Fibonacci() << " ";
 }
