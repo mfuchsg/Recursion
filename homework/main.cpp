@@ -1,23 +1,12 @@
 ﻿#include<iostream>
 using namespace std;
 
-//#define factorial
-//#define Power_2
-#define fibonachi
+#define factorial
+#define Power_2
+//#define fibonachi
 
-int Factorial(int n)
-{
-	if (n == 0) return 1;
-	if (n == 1)return 1;
-	return n * Factorial(n - 1);
-
-}
-int Power_1(int base, int power)
-{
-	if (power == 0) return 1;
-	if (power == 1) return base;
-	return base * Power_1(base, power - 1);
-}
+int Factorial(int n);
+int Power_1(int base, int power);
 void Fibonacci(int n);
 
 
@@ -50,6 +39,19 @@ void main()
 	Fibonacci(n);
 #endif // fibonachi
 	
+}
+int Factorial(int n)
+{
+	if (n == 0) return 1;
+	if (n == 1)return 1;
+	return n * Factorial(n - 1);
+
+}
+int Power_1(int base, int power)
+{
+	if (power == 0) return 1;
+	if (power == 1) return base;
+	return base * Power_1(base, power - 1);
 }
 void Fibonacci(int n)
 {
