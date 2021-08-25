@@ -3,6 +3,7 @@ using namespace std;
 
 //#define factorial
 //#define Power_2
+#define fibonachi
 
 int Factorial(int n)
 {
@@ -17,16 +18,8 @@ int Power_1(int base, int power)
 	if (power == 1) return base;
 	return base * Power_1(base, power - 1);
 }
-int Fibonacci(int n)
-{
+void Fibonacci(int n);
 
-		if (n == 1 || n == 0)
-			return 1;
-		else
-			return Fibonacci(n - 1) + Fibonacci(n - 2)<a;
-	
-
-}
 
 void main()
 {
@@ -51,8 +44,19 @@ void main()
 	cout << "Введите степень числа: "; cin >> power;
 	cout << Power_1(base, power);
 #endif // Powe_2
+#ifdef fibonachi
 	int n;
-	int a;
-	cout << "До какого числа вывести: "; cin >> a;
-	cout << Fibonacci() << " ";
+	cout << "До какого числа вывести: "; cin >> n;
+	Fibonacci(n);
+#endif // fibonachi
+	
+}
+void Fibonacci(int n)
+{
+	static int a = 0, b = 1, c = 1;
+	if (a > n)return;
+	cout << a << "\t";
+	a ^= b ^= a ^= b = c = a+b;
+	
+	Fibonacci(n);
 }
